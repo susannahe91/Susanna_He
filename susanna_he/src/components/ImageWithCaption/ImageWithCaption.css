@@ -1,0 +1,127 @@
+.image-with-caption {
+  /* max-width: calc(100% - 24em); */
+  /* max-height: 1400px; */
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.image-caption-container {
+  max-width: calc(100% - 24em);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 0 2rem; */
+  gap: 10rem;
+  align-content: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: rgb(92, 92, 92);
+  line-height: 30px;
+  margin: 2.5rem auto;
+  text-align: left;
+}
+
+.image-caption-container h3 {
+  flex: 2;
+  font-size: 28px;
+  font-weight: 400;
+  /* padding: 0 2rem; */
+  /* margin: 0 auto 0 auto; */
+  margin: 0;
+}
+
+.image-caption-container p {
+  flex: 5;
+  /* padding: 0 2rem; */
+  font-size: 20px;
+  /* margin: 0 auto 0 auto; */
+  margin: 0;
+}
+
+.media-container img {
+  max-width: calc(100% - 24em);
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+  /* max-width: 100%; */
+  /* max-width: calc(100% - 4em);  */
+  max-height: 1000px;
+  /* max-height: 100vh; */
+  margin: 0 auto;
+  display: block;
+}
+
+.media-container.banner img {
+  max-width: 100% !important;
+  max-height: 1400px;
+}
+
+.image-caption-container.title {
+  max-width: calc(100% - 16em);
+  margin: 4rem auto;
+  line-height: 60px;
+}
+
+.image-caption-container.title h3 {
+  text-transform: uppercase;
+  flex: 3;
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.image-caption-container.title p {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1400px) {
+  .image-caption-container {
+    /* padding: 2rem; */
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: 100%;
+    gap: 1rem;
+    /* max-width: 100%; */
+  }
+
+  .image-caption-container h3 {
+    padding: 0 2rem;
+  }
+
+  .image-caption-container p {
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .image-with-caption {
+    /* padding: 4rem; */
+    margin: 0;
+  }
+
+  .media-container img {
+    max-width: 100%;
+  }
+
+  .image-caption-container.title {
+    max-width: 100%;
+    /* overflow: hidden; */
+    /* justify-self: center; */
+    width: 100%;
+    margin: 2rem 0;
+    /* line-height: 46px; */
+  }
+
+  .image-caption-container.title h3 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .image-caption-container.title p {
+    padding: 0 2rem 0 2rem;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}

@@ -1,0 +1,194 @@
+nav {
+  padding: 50px 60px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navlinks-container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding: 0;
+}
+
+.logo-link li {
+  list-style: none;
+  font-family: Alegreya Sans SC, sans-serif;
+  font-size: 20px;
+  /* color: rgb(51, 51, 51); */
+}
+
+.navlinks-container .page-links li {
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  /* font-family: 'Urbanist', sans-serif; */
+  font-size: 20px;
+  /* color: rgb(51, 51, 51); */
+}
+
+.page-links {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: -20px;
+  justify-content: space-between;
+}
+
+.page-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  box-sizing: border-box;
+}
+
+.page-links .page-link {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+  color: #22222274;
+  transition: all ease-in-out 0.2s;
+}
+
+.page-links .page-link:hover,
+.page-links .page-link.active {
+  color: #222222 !important;
+  /* border-bottom: solid 1px black; */
+}
+
+.logo-link .page-link {
+  font-size: 24px;
+}
+
+.hamburger-menu {
+  display: none; /* Hide the hamburger menu icon by default */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: rgb(51, 51, 51);
+  /* color: rgb(51, 51, 51); */
+  opacity: 80%;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlinks-container {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.navlinks-container.menu-open {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navlinks-container.menu-open li:not(.logo-link) {
+  display: block; /* Show menu options when the menu is open */
+}
+
+@media screen and (max-width: 700px) {
+  .navlinks-container {
+    display: none; /* Hide regular links by default */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu icon */
+  }
+
+  .navlinks-container.menu-open {
+    display: flex; /* Show the menu options when the menu is open */
+  }
+  .page-links.menu-open {
+    /* background-color: white; */
+    width: 100vw;
+    /* height: 100vh; */
+    /* height: 300px; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /* gap: 10px; */
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 -2px 4px rgba(0, 0, 0, 0.2);  */
+    /* box-shadow: 10px 10px 20px -25px rgba(0, 0, 0, 0), 10px 20px 55px -25px rgba(0, 0, 0, 0.15); */
+  }
+  .page-links {
+    z-index: 1000;
+  }
+  .page-links.menu-open .page-link:hover,
+  .page-links.menu-open .page-link.active {
+    color: #ffffff !important;
+    /* border-bottom: solid 1px black; */
+  }
+
+  .overlay {
+    position: fixed;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.87); /* Adjust the opacity as needed */
+    opacity: 0; /* Set initial opacity to 0 */
+    pointer-events: none; 
+
+    transition: opacity 0.55s ease; /* Add transitions for opacity and transform */
+    /* transform: scale(0);  */
+    /* transform-origin: center center; */
+  }
+
+  .overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+    /* transform: scale(1);  */
+  }
+
+  .page-links.menu-open li {
+    text-align: center;
+    /* background-color: white; */
+    width: 100%;
+    /* padding: 35px 35px; */
+  }
+
+  .page-links.menu-open li a {
+    width: 100%;
+    /* background-color: white; */
+    font-size: 20px;
+    color: #a8a8a8;
+    margin: 10px 0;
+    display: block;
+    padding: 35px 35px;
+  }
+}
+@media screen and (max-width: 460px) {
+  nav {
+    padding: 30px 40px !important;
+  }
+  .page-links.menu-open li a {
+    padding: 20px 20px;
+  }
+  .page-links.menu-open {
+    top: 50%;
+  }
+}

@@ -1,0 +1,133 @@
+.text-section {
+  margin: 8rem 0 8rem 0;
+  /* height: 50vh; */
+}
+
+.text-slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 75%; */
+  /* padding: 4rem 0; */
+  margin: 0 4rem;
+  /* margin: 6rem 4rem 10rem 4rem !important; */
+}
+
+.text-slide-container .slide-text {
+  max-width: 40%;
+}
+
+.text-slide-container .slide-text h2 {
+  /* color: rgb(92, 92, 92); */
+  color: rgb(51, 51, 51);
+  margin: 0;
+  text-transform: none;
+  font-size: 40px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.text-slide-container .slide-text ol {
+  padding-left: 28px;
+}
+
+.text-slide-container .slide-text li {
+  padding: 6px 0 6px 4px;
+}
+
+.text-slide-container .slide-text p,
+.text-slide-container .slide-text li {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.text-slide-container .slide-text p {
+  margin: 2rem 0;
+}
+
+.text-slide-details {
+  max-width: 35%;
+  border-top: 1.5px solid rgb(219, 219, 219);
+  padding: 1.25rem;
+  margin: 0 auto 0 auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: "Lato", sans-serif;
+  color: rgb(92, 92, 92);
+  font-weight: 300;
+  /* color: rgb(92, 92, 92); */
+
+  /* line-height: 16px; */
+}
+
+.stat {
+  color: rgb(51, 51, 51);
+  font-size: 40px;
+  /* font-weight: 300; */
+}
+
+/* .text-slide-details p {
+  color: rgb(92, 92, 92);
+  font-weight: 300;
+} */
+
+@media screen and (max-width: 1400px) {
+  .text-section {
+    /* margin: 0 0 16rem 0; */
+    margin: 2.5rem 0 !important;
+    height: auto;
+  }
+
+  .text-slide-container .slide-text {
+    max-width: 80%;
+  }
+
+  .text-slide-details {
+    max-width: 80%;
+  }
+
+  .text-slide-container {
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    /* height: 100vh; */
+    height: auto;
+    /* padding-bottom: 1.25rem; */
+    /* flex-wrap: wrap; */
+    /* margin-bottom: 1.25rem; */
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .text-section {
+    margin: 0;
+    height: auto;
+  }
+
+  .text-slide-details {
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: auto;
+  }
+
+  .text-slide-details .detail-block {
+    margin-bottom: 1.25rem;
+  }
+
+  .text-slide-container .slide-text h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .text-slide-container .slide-text p,
+  .text-slide-container .slide-text li {
+    font-size: 18px;
+  }
+
+  .stat {
+    font-size: 32px;
+    /* font-weight: 300; */
+  }
+}

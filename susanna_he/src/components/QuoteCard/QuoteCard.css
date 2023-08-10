@@ -1,0 +1,85 @@
+.quote-container {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem;
+  /* margin-top: 2rem; */
+  margin: 0 auto 0 auto;
+  /* color: rgb(92, 92, 92); */
+  /* text-align: center; */
+  max-width: 50%;
+}
+
+.quote-container p {
+  color: rgb(51, 51, 51);
+  /* color: rgb(92, 92, 92); */
+  font-size: 28px;
+  line-height: 52px;
+  font-weight: 400;
+}
+
+.large-quotation-mark {
+  font-size: 60px;
+  /* margin-top: 15px; */
+  margin-bottom: -15px;
+  font-weight: 600;
+  line-height: 0;
+}
+
+.quote-source {
+  color: rgb(92, 92, 92);
+  text-align: right;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1150px) {
+  .quote-container {
+    max-width: 85%;
+    padding: 6rem;
+  }
+
+  .quote-container p {
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  .large-quotation-mark {
+    font-size: 62px;
+  }
+
+  .quote-source {
+    font-size: 20px;
+  }  
+}
+
+@media screen and (max-width: 750px) {
+  .quote-container {
+    /* max-width: 85%; */
+    /* margin: 3rem 0; */
+    margin: 1.25rem auto 3.25rem auto;
+    padding: 3rem;
+  }
+
+  .quote-container p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .large-quotation-mark {
+    font-size: 56px;
+  }
+
+  .quote-source {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .quote-container {
+      max-width: 100%;
+      padding: 2rem;
+    }
+  }
+  

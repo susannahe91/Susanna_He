@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400&family=Inconsolata:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Urbanist:ital,wght@0,500;0,600;1,500&display=swap");
+
+.home-landing-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5rem;
+  text-align: center;
+}
+
+.main-heading {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 44px;
+  margin: 20px 0;
+  color: rgb(51, 51, 51);
+}
+
+.secondary-heading {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 0;
+  margin: 10px 0;
+  color: rgb(51, 51, 51);
+}
+
+@media screen and (max-width: 520px) {
+  .home-landing-container {
+    margin-top: -2.75rem;
+  }
+  .main-heading {
+    font-size: 60px;
+    line-height: 56px;
+    margin: 10px 0;
+  }
+  .secondary-heading {
+    width: 80%;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .main-heading {
+    font-size: 54px;
+    width: 80%;
+  }
+  .secondary-heading {
+    font-size: 22px;
+    width: 80%;
+    line-height: 24px;
+  }
+  .home-link-icons .link-icon {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+
+p.secondary-heading {
+  margin: 0 !important;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.home-link-icons {
+  display: flex;
+  margin-top: 40px;
+  gap: 50px;
+}
+
+.home-link-icons .link-icon {
+  width: 40px;
+  height: 40px;
+  color: rgb(51, 51, 51);
+}
+
+.home-link-icons a {
+  transition: transform 0.3s ease;
+}
+
+.home-link-icons a:hover {
+  transform: translateY(-4px);
+}
+
+.home-projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem 11rem;
+  margin-top: 5.5rem;
+  /* margin: 0 60px; */
+  /* margin-top: 40rem;
+  margin-bottom: 40rem; */
+}
+
+/* .home-projects-list h2 {
+  justify-self: flex-start;
+  align-self: flex-start;
+  text-align: left;
+} */
+
+/* .project-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 45px;
+} */
+
+.project-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 15px;
+  align-items: start;
+}
+
+.project-card-grid > * {
+  grid-column: span 1;
+}
+
+@media screen and (max-width: 970px) {
+  .home-projects-list {
+    padding: 2rem 5rem !important;
+  }
+}
+@media screen and (max-width: 376px) {
+    .project-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+}

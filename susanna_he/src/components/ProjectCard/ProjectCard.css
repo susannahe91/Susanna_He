@@ -1,0 +1,78 @@
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 2rem 2rem;
+  /* padding: 1.25rem 1.25rem; */
+  /* max-width: 400px; */
+}
+
+.project-img-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-img-box img {
+  align-self: center;
+  width: 100%;
+  max-width: 100%;
+  /* height: 400px; */
+  opacity: 1;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+
+.project-img-box img:hover {
+  /* opacity: 70%; */
+  transform: scale(1.1);
+}
+
+.project-card-container h2 {
+  font-family: "Lato", sans-serif;
+  /* font-family: "Inconsolata", monospace; */
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 45px;
+  margin: 0;
+  color: rgb(51, 51, 51);
+  transition: all 0.3s;
+}
+
+.project-card-container h2:hover, .project-card-container h2:active {
+  /* color: rgb(114, 114, 114); */
+  text-decoration: underline;
+  /* opacity: 75%; */
+}
+
+.project-card-container h3 {
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  /* color: #5c5c5c; */
+  color: rgb(151, 151, 151);
+}
+
+.project-card-container p {
+  font-family: "Inconsolata", monospace;
+  /* font-family: "Lato", sans-serif; */
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  /* width: 400px; */
+  color: #5c5c5c;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
