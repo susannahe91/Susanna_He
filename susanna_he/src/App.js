@@ -27,8 +27,12 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route
+        {/* <Route
           path="/"
+          element={<Home onPageChange={handleRouteChange} />}
+        /> */}
+        <Route
+          path={["/", "/susanna_he"]}
           element={<Home onPageChange={handleRouteChange} />}
         />
         <Route
